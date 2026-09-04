@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Imagem da Tela Sobre (ocupando a largura toda) -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/foto_curso"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Nome do Curso -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Engenharia de Software e Dados"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Duração exigida na atividade -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duração: 8 Semestres"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Modalidade exigida na atividade -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modalidade: Presencial"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Descrição detalhada -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Neste curso, você aprenderá a projetar, desenvolver e testar softwares de alta qualidade. Com uma base forte em tecnologia, trabalharemos também com grandes volumes de dados (Big Data) e Inteligência Artificial."
+        android:textSize="16sp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Caixa para colocar os botões LADO A LADO -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Botão Voltar -->
+        <Button
+            android:id="@+id/btnVoltarSobre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Voltar à Home" />
+
+        <!-- Botão Disciplinas -->
+        <Button
+            android:id="@+id/btnDisciplinasSobre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ir para Disciplinas" />
+    </LinearLayout>
+
+</LinearLayout>

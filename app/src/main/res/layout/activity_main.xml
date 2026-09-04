@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center">
+
+    <!-- Imagem da Logo -->
+
+    <!-- Nome da Instituição -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="306dp"
+        android:layout_height="215dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/logo_instituicao" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UNIPÊ"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Nome do Curso -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Engenharia de Software e Dados"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Descrição do Curso -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desenvolva soluções inovadoras para o futuro tecnológico."
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Botão Conheça o Curso -->
+    <Button
+        android:id="@+id/btnConhecaCurso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conheça o Curso"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botão Disciplinas -->
+    <Button
+        android:id="@+id/btnDisciplinas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disciplinas" />
+
+</LinearLayout>
