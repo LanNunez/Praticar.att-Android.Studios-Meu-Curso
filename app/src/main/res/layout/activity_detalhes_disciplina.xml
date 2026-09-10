@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Título Fixo -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DETALHES DA DISCIPLINA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <!-- DESAFIO OPÇÃO A: Imagem da Disciplina -->
+    <!-- Estamos reaproveitando a imagem que você usou na aula passada -->
+    <ImageView
+        android:id="@+id/imgDisciplina"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/foto_curso"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Nome da Disciplina -->
+    <TextView
+        android:id="@+id/txtNomeDisciplina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome da Disciplina"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Carga Horária -->
+    <TextView
+        android:id="@+id/txtCargaHoraria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carga horária: -- horas"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Modalidade -->
+    <TextView
+        android:id="@+id/txtModalidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modalidade: Presencial"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Nível -->
+    <TextView
+        android:id="@+id/txtNivel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nível: Básico"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Pré-requisito -->
+    <TextView
+        android:id="@+id/txtPreRequisito"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pré-requisito: Nenhum"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descrição:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Descrição -->
+    <TextView
+        android:id="@+id/txtDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Descrição da disciplina aparecerá aqui."
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Caixa para colocar os botões Lado a Lado -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Botão Voltar -->
+        <Button
+            android:id="@+id/btnVoltarDetalhes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VOLTAR"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- DESAFIO OPÇÃO B: Botão Compartilhar -->
+        <Button
+            android:id="@+id/btnCompartilhar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMPARTILHAR" />
+    </LinearLayout>
+
+</LinearLayout>
